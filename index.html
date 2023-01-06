@@ -55,7 +55,7 @@
 
         <div id="form-box">
             <div class="user-input">
-                <input type="text" placeholder="username" id="username">
+                <input type="text" onKeyDown="key_down(this, event)" placeholder="username" id="username">
                 <div id="searchBtn"><button onclick="fetch_user()">Search</button></div>
             </div>
             <div id="response"></div>

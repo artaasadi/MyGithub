@@ -115,3 +115,18 @@ async function fetch_user(){
     //     });
     // }
 }
+
+// search by pressing enter
+function key_down(element, e) {
+    var charCode;
+    if(e && e.which){
+        charCode = e.which;
+    }else if(window.event){
+        e = window.event;
+        charCode = e.keyCode;
+    }
+
+    if(charCode == 13) {
+        fetch_user()
+    }
+}
