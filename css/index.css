@@ -8,11 +8,11 @@ body {
 }
 
 .bg-filter {
-    background: rgba(255,255,255,0.1);
+    background: rgba(0,0,0,1);
     filter: blur(8px);
     border-radius: 8px;
     -webkit-filter: blur();
-    width: 50%;
+    width: auto;
     margin: auto;    
 }
 
@@ -66,7 +66,7 @@ input {
     padding: 15px;
     margin-left: 10px;
     margin-top: 50px;
-    background-color: rgba(167, 40, 40, 0.438);
+    background-color: rgb(230, 150, 80, 0.2);
     border: none;
     border-radius: 5px;
 }
@@ -81,7 +81,7 @@ input:hover{
 /* --------Button Properties-------- */
 button {
     padding: 10px;
-    background-color: rgba(167, 40, 40, 0.438);
+    background-color: rgb(230, 150, 80);
     border-radius: 5px;
     border: none;
     margin-left: auto;
@@ -143,6 +143,7 @@ img {
 }
 /* ---------The div specifically for the pack of data------------ */
 .more-details-table {
+    border-top: 2px solid rgb(230, 150, 80);
     padding: 25px;
     border-collapse: collapse;
     margin-left: auto;
