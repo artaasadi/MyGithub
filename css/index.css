@@ -1,0 +1,168 @@
+body {
+    height: auto;
+    background-image: url('../data/wallpaper.jpg');
+  /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.bg-filter {
+    background: rgba(255,255,255,0.1);
+    filter: blur(8px);
+    border-radius: 8px;
+    -webkit-filter: blur();
+    width: 50%;
+    margin: auto;    
+}
+
+/* Main Container */
+.void {
+    width: 800px;;
+    height: 500px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    
+    /*background-color: red;*/
+}
+/* ===================================== */
+
+/* Left Container -- For Data Showing */
+#data-section {
+    width: 55%;
+    height: 90%;
+    float: left;
+    padding: 20px;
+    /*background-color: skyblue;*/
+    background-color: #4b5771bf;
+    /*opacity: 0.8;*/
+    border-radius: 35px;
+}
+/* ============================================================================= */
+
+/* Right Container for Input Data from User */
+#form-box {
+    width: 30%;
+    height: 90%;
+    float: right;
+    padding: 20px;
+    /*background-color: skyblue;*/
+    background-color: #4b5771bf;
+    /*opacity: 0.8;*/
+    border-radius: 25px;
+}
+/*-----------Hidden Div----------*/
+.user-input {
+    /*opacity: 1;*/
+    height: 200px;
+    padding: 10px;
+    /*background-color: red;*/
+    margin-top: 80px;
+}
+/* ------Username TextBox Properties----- */
+input {
+    /*opacity: 1.0;*/
+    padding: 15px;
+    margin-left: 10px;
+    margin-top: 50px;
+    background-color: rgba(167, 40, 40, 0.438);
+    border: none;
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(45, 45, 45, 0.95);
+}
+input:hover{
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(45, 45, 45, 0.95);
+}
+/* --------Button Properties-------- */
+button {
+    padding: 10px;
+    background-color: rgba(167, 40, 40, 0.438);
+    border-radius: 5px;
+    border: none;
+    margin-left: auto;
+    /*opacity: 1.0;*/
+}
+button:hover{
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(45, 45, 45, 0.95);
+}
+#searchBtn {
+    width: fit-content;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto
+}
+/* ==================================================================================== */
+
+/* The upper div in left container ; Including Avatar, Name and Blog of the User */
+.person {
+    /*background-color: #0051ff;*/
+    height: 150px;
+}
+/* ==================================================================================== */
+
+/* The lower div in left container ; Including all other escraped data from github */
+.more-details {
+    /*background-color: #0051ff;*/
+    margin-top: 10px;
+    height: 275px;
+    padding: 10px;
+}
+/* ==================================================================================== */
+
+/* ---------A small div specifically for avatar image------------ */
+.avatar-div {
+    /*background-color: red;*/
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    float: left;
+}
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+/* ---------A small div specifically for user name------------ */
+.name-div {
+    width: 250px;
+    /*background-color: red;*/
+    float: right;
+    margin-top: 18px;
+    margin-right: 30px;
+    text-align: center;
+}
+/* ---------The div specifically for the pack of data------------ */
+.more-details-table {
+    padding: 25px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15)
+}
+td {
+    padding: 20px;
+    text-align: center;
+}
+th {
+    padding: 3px;
+}
+
+/* ---------A small div specifically the responses; User not Found|LocalStorage|Cookies------------ */
+#response {
+    /*background-color: red;*/
+    height: 40px;
+    text-align: center;
+}

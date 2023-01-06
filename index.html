@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+    <title>MyGithub</title>
+
+</head>
+
+<body class="bg">
+    <div class="bg-filter">
+    <div class="void">
+        <div id="data-section">
+            <div class="person">
+                <div class="avatar-div">
+                    <img src="data/profile-user.png" id="avatar-img" >
+                </div>
+                <div class="name-div">
+                    <h1 id="account-name">Name</h1>
+                    <h4 id="blog">Blog</h4>
+                </div>
+
+            </div>
+            <div class="more-details">
+                <table class="more-details-table">
+                    <thead>
+                        <tr>
+                            <th style="padding-top: 7px">Location</th>
+                            <th style="padding-top: 7px">Followers</th>
+                            <th style="padding-top: 7px">Following</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="loc">-</td>
+                            <td id="followers">-</td>
+                            <td id="following">-</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="3">Bio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" id="bio">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="form-box">
+            <div class="user-input">
+                <input type="text" placeholder="username" id="username">
+                <div id="searchBtn"><button onclick="fetch_user()">Search</button></div>
+            </div>
+            <div id="response"></div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
