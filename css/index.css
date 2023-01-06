@@ -6,7 +6,7 @@ body {
     background-size: cover;
     
 }
-
+/* tried to make a filter on background like a blur bot failed :( */
 .bg-filter {
     background: rgba(0,0,0,1);
     filter: blur(8px);
@@ -16,7 +16,6 @@ body {
     margin: auto;    
 }
 
-/* Main Container */
 .void {
     width: 800px;;
     height: 500px;
@@ -26,9 +25,7 @@ body {
     
     /*background-color: red;*/
 }
-/* ===================================== */
 
-/* Left Container -- For Data Showing */
 #data-section {
     width: 55%;
     height: 90%;
@@ -39,9 +36,7 @@ body {
     /*opacity: 0.8;*/
     border-radius: 35px;
 }
-/* ============================================================================= */
 
-/* Right Container for Input Data from User */
 #form-box {
     width: 30%;
     height: 90%;
@@ -52,7 +47,6 @@ body {
     /*opacity: 0.8;*/
     border-radius: 25px;
 }
-/*-----------Hidden Div----------*/
 .user-input {
     /*opacity: 1;*/
     height: 200px;
@@ -60,7 +54,7 @@ body {
     /*background-color: red;*/
     margin-top: 80px;
 }
-/* ------Username TextBox Properties----- */
+/* style for all input sections */
 input {
     /*opacity: 1.0;*/
     padding: 15px;
@@ -70,15 +64,17 @@ input {
     border: none;
     border-radius: 5px;
 }
+/* when input is selected */
 input:focus{
     outline: none;
     box-shadow: 0px 0px 10px rgba(45, 45, 45, 0.95);
 }
+/* when input is hovered */
 input:hover{
     outline: none;
     box-shadow: 0px 0px 10px rgba(45, 45, 45, 0.95);
 }
-/* --------Button Properties-------- */
+/* style for all buttons used in this page */
 button {
     padding: 10px;
     background-color: rgb(230, 150, 80);
@@ -87,37 +83,33 @@ button {
     margin-left: auto;
     /*opacity: 1.0;*/
 }
+/* style for all buttons used in this page when they are hovered */
 button:hover{
     outline: none;
     box-shadow: 0px 0px 10px rgba(45, 45, 45, 0.95);
 }
+
+/* style for the button (id should use # not .) */
 #searchBtn {
     width: fit-content;
     margin-top: 15%;
     margin-left: auto;
     margin-right: auto
 }
-/* ==================================================================================== */
 
-/* The upper div in left container ; Including Avatar, Name and Blog of the User */
 .person {
-    /*background-color: #0051ff;*/
     height: 150px;
 }
-/* ==================================================================================== */
 
-/* The lower div in left container ; Including all other escraped data from github */
+/* showing more details */
 .more-details {
-    /*background-color: #0051ff;*/
     margin-top: 10px;
     height: 275px;
     padding: 10px;
 }
-/* ==================================================================================== */
 
-/* ---------A small div specifically for avatar image------------ */
+/* div for the avatar image */
 .avatar-div {
-    /*background-color: red;*/
     margin-left: 30px;
     margin-top: 30px;
     width: 100px;
@@ -132,16 +124,16 @@ img {
     border-radius: 100px;
 }
 
-/* ---------A small div specifically for user name------------ */
+/* showing the name and things */
 .name-div {
     width: 250px;
-    /*background-color: red;*/
     float: left;
     margin-top: 18px;
     margin-left: 20px;
     text-align: left;
 }
-/* ---------The div specifically for the pack of data------------ */
+
+/* a section for showing the details */
 .more-details-table {
     border-top: 2px solid rgb(230, 150, 80);
     padding: 25px;
@@ -161,9 +153,8 @@ th {
     padding: 3px;
 }
 
-/* ---------A small div specifically the responses; User not Found|LocalStorage|Cookies------------ */
+/* response section */
 #response {
-    /*background-color: red;*/
     height: 40px;
     text-align: center;
 }
